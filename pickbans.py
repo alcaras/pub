@@ -90,4 +90,5 @@ pickbans = ["Rubick",
             "Warlock",
             "Weaver",
             "Zeus",
-            "Centaur Warrunner"]
+            "Centaur Warrunner",
+            "Slark"]

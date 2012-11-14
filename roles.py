@@ -95,6 +95,7 @@ roles = {
     'Silencer': ['Carry', 'Initiator', 'Support'],
     'Skeleton King': ['Carry', 'Disabler', 'Durable'],
     'Slardar': ['Carry', 'Disabler', 'Durable', 'Initiator'],
+    'Slark' : ['Escape'],
     'Sniper': ['Carry'],
     'Spectre': ['Carry', 'Durable'],
     'Spirit Breaker': ['Carry', 'Disabler', 'Durable', 'Initiator'],

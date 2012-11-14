@@ -90,7 +90,7 @@ heroes = { 1 : "Anti-Mage",
            90 : "Keeper of the Light",
            91 : "Wisp",
            92 : "Visage",
-           # 93 -- missing
+           93 : "Slark",
            # 94 -- missing
            95 : "Centaur Warrunner",
            96 : "Magnus", 
