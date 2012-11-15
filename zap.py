@@ -14,6 +14,7 @@ from new_counters import new_counters
 from initds import initds
 from friends import friends
 from underfive import underfive
+from yourbest import yourbest
 
 from winrate_76c import winrate
 from matchup_76c import matchup
@@ -361,6 +362,8 @@ elif args.consider == "special" or args.consider=="alcaras" or args.consider=="a
     consider_these_heroes = special
 elif args.consider == "underfive" or args.consider=="five":
     consider_these_heroes = underfive
+elif args.consider == "yourbest" or args.consider=="best":
+    consider_these_heroes = yourbest
 elif args.consider in friends:
     consider_these_heroes = friends[args.consider]
 else:

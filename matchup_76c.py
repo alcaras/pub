@@ -8553,4 +8553,5 @@ matchup = {   'Alchemist': {   'Ancient Apparition': 0.4728,
                           'Weaver': 0.5743,
                           'Windrunner': 0.5679,
                           'Wisp': 0.5545,
-                          'Witch Doctor': 0.5332}}
+                          'Witch Doctor': 0.5332},
+              }

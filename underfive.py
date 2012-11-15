@@ -9,6 +9,7 @@
 
 # heroes with fewer with 5 games played
 underfive = [
+#    "Slark",
     "Centaur Warrunner",
     "Alchemist",
     "Ancient Apparition",
