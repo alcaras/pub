@@ -31,7 +31,7 @@ pp = pprint.PrettyPrinter(indent = 4)
 parser = argparse.ArgumentParser(description='lane advisor for dota2')
 parser.add_argument('heroes', metavar='heroes', type=str, nargs='+', help='your team')
 parser.add_argument('-e', '--enemy', metavar='enemy', type=str, nargs='+', help='the other team', default='')
-parser.add_argument('-c', '--consider', type=str, help='special, alpha, unwon, or rotation, initds', default='special')
+parser.add_argument('-c', '--consider', type=str, help='special, alpha, unwon, or rotation, initds', default='alpha')
 args = parser.parse_args()
 pp.pprint(args)
 
@@ -102,7 +102,9 @@ def nc_mod(h, eh):
     them = parse_heroes(eh)
     s =  0
     for e in them:
-        s += matchup[h][e] - winrate[h]
+        if h in matchup:
+            if e in matchup[h]:
+                s += matchup[h][e] - winrate[h]
 #        s += - matchup[e][h] + winrate[e]
         
     if s < 0:
@@ -188,9 +190,10 @@ def counter_mod(ah, eh):
         return 0
     
     for h in them:
-        for z in new_counters[h]:
-            if z in us:
-                mod += new_counters[h][z]
+        if h in new_counters:
+            for z in new_counters[h]:
+                if z in us:
+                    mod += new_counters[h][z]
         
     return mod
 
