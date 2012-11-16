@@ -69,7 +69,7 @@ alpha  = [
     "Silencer",
     "Skeleton King",
     "Slardar",
-#    "Slark",
+    "Slark",
     "Sniper",
     "Spectre",
     "Spirit Breaker",

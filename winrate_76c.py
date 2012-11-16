@@ -68,6 +68,7 @@ winrate = {   'Alchemist': 0.4428,
               'Shadow Shaman': 0.4814,
               'Silencer': 0.5221,
               'Skeleton King': 0.5123,
+              'Slark' : 0.50, #unknown
               'Slardar': 0.5088,
               'Sniper': 0.47859999999999997,
               'Spectre': 0.4854,

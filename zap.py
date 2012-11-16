@@ -82,7 +82,9 @@ def matchup_mod(ah, eh):
     for h in us:
         minimod = []
         for e in them:
-            minimod += [matchup[h][e]]
+            if h in matchup:
+                if e in matchup[h]:
+                    minimod += [matchup[h][e]]
         mod += [numpy.average(minimod)]
     
     return mod
