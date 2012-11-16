@@ -32,6 +32,8 @@ for h in heroes.iterkeys():
     hn = string.replace(hn, '\'', '')
     hn = string.replace(hn, ' ', '-')
     hn = hn.lower()
+    if hn == "magnus":
+      hn = "magnataur"
     url = tooltip_stub + hn + tooltip_tail
     print >> sys.stderr, url
 

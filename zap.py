@@ -16,8 +16,8 @@ from friends import friends
 from underfive import underfive
 from yourbest import yourbest
 
-from winrate_76c import winrate
-from matchup_76c import matchup
+from winrate_76c_slark import winrate
+from matchup_76c_slark import matchup
 
 import argparse
 import pprint
@@ -135,7 +135,10 @@ def lane_mod(a, n_heroes = 0):
     # mid, jungle, solo, two
     # or mid, top, hard hard
         
+        
     # disable lane mod for now
+
+    mod = 0
     if n_heroes == 5:
         return mod
 
